@@ -1,0 +1,198 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F5F5DC;
+  color: #333;
+  margin: 10;
+  padding: 10;
+}
+
+
+ #home p {
+  font-size: 1rem;
+  line-height: 1.6; 
+ 
+}
+
+
+h1, h2, h3 {
+  font-family: 'Noto Serif', serif;
+  font-size: 2rem;
+  color: #8B4513;
+}
+
+header {
+  background: #DAA520;
+  
+  padding: 2rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #8B4513;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.subtitle {
+  animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+.featured-cities {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.city-card {
+  background: #fff;
+  border: 2px solid #8B4513;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.city-card:hover {
+  transform: scale(1.03);
+  background: #DAA520;
+  color: #fff;
+}
+
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.gallery-card {
+  background: #fff;
+  padding: 1rem;
+  border: 2px solid #8B4513;
+
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.gallery-card:hover {
+  background: #DAA520;
+  color: #fff;
+}
+
+
+.city-image {
+   max-width: 300px;
+   border-radius: 8px;
+  height: 200px;
+  background: #8B4513;
+  transition: background 0.5s ease;
+}
+
+
+.city-info p {
+  margin: 0.5rem 0;
+
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+input, textarea {
+  padding: 0.5rem;
+  border: 1px solid #8B4513;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #DAA520;
+}
+
+button {
+  background: #8B4513;
+  color: #fff;
+  padding: 0.7rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #DAA520;
+}
+
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;      
+  display: block;
+  margin: 0.5rem 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+img:hover {
+  transform: scale(1.05);  
+  opacity: 0.9;           
+}
+
+
+.featured-cities img {
+  max-height: 200px;
+  object-fit: cover;      
+  border: 2px solid #8B4513;
+}
+
+
+.gallery-card img {
+  max-height: 150px;
+  object-fit: cover;
+  border: 1px solid #DAA520;
+}
+
+
+.city-feature img {
+  max-width: 250px;
+  border: 3px solid #8B4513;
+}
+
+.city of the Day image:hover {
+  border-color: #DAA520;
+  size: 0cap;
+}
+ 
+
+.city-feature {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border: 2px solid #8B4513;
+  border-radius: 8px;
+  background: #fff;
+  max-width: 600px;
+  margin: auto;
+  align-items: center;
+}
